@@ -116,6 +116,8 @@ section.project { padding: 56px 0; border-top: 1px solid var(--line); }
 .shot.tall { min-height: 380px; }
 .shot.car { min-height: 0; aspect-ratio: 16 / 9; }
 .shot.car img { object-position: center 65%; }
+.shot.video { min-height: 0; aspect-ratio: 16 / 9; }
+.shot.video video { object-position: center 65%; }
 .shot.fourthree { min-height: 0; aspect-ratio: 4 / 3; }
 .shot video { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
 .shot.mine { min-height: 0; aspect-ratio: 3 / 4; }
@@ -301,14 +303,13 @@ footer .fine { font-size: 14px; color: var(--muted); }
         <h2>Robot design competition</h2>
       </div>
       <div>
-        <p>MECHENG 2C04 is a mandatory second-year design course where every mechanical engineering student at McMaster builds a robot for the same competition. Out of 37 teams, ours won: we scored the most goals (9, against a class average of 2.9) and tied for the most completed runs (10 in one minute, against an average of 4.2).</p>
+        <p>MECHENG 2C04 is a mandatory second-year design course where mechanical engineering students, in teams of three, design and build a robot for a head-to-head competition. Competing against the entire class of 163 students, our team took first place, scoring the most goals (9, against a class average of 2.9) and tying for the most completed runs (10 in one minute, against an average of 4.2).</p>
       </div>
     </div>
 
     <div class="gallery">
-      <figure class="shot g-half fourthree"><video src="c04-run.mp4" poster="c04-poster.jpg" autoplay muted loop playsinline aria-label="Our robot driving to the line and launching a ping pong ball into the goal"></video><figcaption>Competition run</figcaption></figure>
+      <figure class="shot g-wide video"><video src="c04-run.mp4" poster="c04-poster.jpg" autoplay muted loop playsinline aria-label="Our robot driving to the line and launching a ping pong ball into the goal"></video><figcaption>Competition run</figcaption></figure>
       <figure class="shot g-half fourthree"><img src="c04-robot.jpg" alt="The competition robot with its four anchor-shaped legs and ball launcher" loading="lazy"><figcaption>Anchor-shaped legs on each corner</figcaption></figure>
-      <figure class="shot g-half fourthree"><img src="c04-garage.jpg" alt="The robot on the shop floor next to the Formula Electric car" loading="lazy"></figure>
       <figure class="shot g-half fourthree light"><img src="c04-launcher.jpg" alt="Section view of the launcher: a spring-loaded rack driven by a pinion with half its teeth removed" loading="lazy"><figcaption>Launcher section view</figcaption></figure>
     </div>
 
