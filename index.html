@@ -198,6 +198,21 @@ footer .fine { font-size: 14px; color: var(--muted); }
   nav ul { gap: 14px; }
 
 }
+
+/* Plainer, less templated look */
+nav { background: var(--bg); backdrop-filter: none; }
+.hero-img { border-radius: 2px; box-shadow: none; }
+.hero .links { gap: 22px; }
+.btn, .btn.solid, .btn.ghost { padding: 0; border: 0; border-radius: 0; background: none; color: var(--accent); font-size: 17px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.btn:hover { color: var(--ink); }
+.head { grid-template-columns: 1fr; gap: 12px; align-items: start; margin-bottom: 26px; }
+.head p { max-width: 68ch; }
+.shot { border-radius: 0; background: transparent; overflow: visible; padding-bottom: 30px; }
+.shot img, .shot video { inset: 0 0 30px 0; height: calc(100% - 30px); border-radius: 2px; }
+.shot figcaption { position: absolute; left: 0; right: 0; bottom: 5px; max-width: none; padding: 0; border-radius: 0; background: none; color: var(--muted); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gallery { gap: 18px 14px; }
+.tl-year { color: var(--ink); }
+.tl-body li::marker { color: var(--muted); }
 </style>
 </head>
 <body>
@@ -353,7 +368,7 @@ footer .fine { font-size: 14px; color: var(--muted); }
     </div>
 
     <div class="detail">
-      <p>At Highland Valley Copper I was on the site services engineering team, designing chutes, liner packages, custom tooling, work platforms, and lifting devices. I took designs from first concept through to fabrication, and worked directly with fabricators and maintenance crews to sort out problems along the way.</p>
+      <p>At Highland Valley Copper I was on the site services engineering team, designing chutes, liner packages, custom tooling, work platforms, and lifting devices. Mines move slowly, so none of my own designs made it all the way from concept to installation while I was there. Across different projects, though, I was involved in every stage, from design through fabrication to installation, and worked directly with fabricators and maintenance crews to sort out problems along the way.</p>
       <p>At BBA I worked for mining clients on several continents, across different commodities and mining methods. I ran FEA in Ansys Mechanical and SolidWorks Simulation, went on site visits, and worked closely with electrical and mining engineers. Projects ranged from brand-new greenfield mines to existing sites going through major upgrades and retrofits.</p>
       <p>Most of my work in mining is covered by confidentiality agreements, so the two photos above are among the very few I'm allowed to share.</p>
     </div>
