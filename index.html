@@ -227,7 +227,7 @@ nav { background: var(--bg); backdrop-filter: none; }
     <div>
       <h1>Santiago Barrera&#8209;Thirlwall</h1>
       <p class="role">Mechanical Engineering, McMaster University · Class of 2027</p>
-      <p class="intro">I've done 24 months of full-time co-ops so far: an EV motor startup, a copper mine, a mining consultancy, and a manufacturing research lab. Below is some of what I've designed and built along the way, mostly in photos.</p>
+      <p class="intro">I'm a final-year mechanical engineering student with 24 months of full-time co-op experience and four years on my school's Formula Electric Racing team. Below are some photos of what I've designed and built over the years.</p>
       <div class="links">
         <a class="btn solid" href="#formula">Projects</a>
         <a class="btn ghost" href="resume.pdf" data-goatcounter-click="resume-click" data-goatcounter-title="Resume opened (top button)">Resume</a>
@@ -244,7 +244,7 @@ nav { background: var(--bg); backdrop-filter: none; }
         <h2>McMaster Formula Electric</h2>
       </div>
       <div>
-        <p>I joined McMaster's Formula Electric Racing team in my first month of university. I spent a year on the manufacturing subteam before being promoted to Drivetrain Lead, where I took charge of developing our custom planetary gearboxes.</p>
+        <p>I joined McMaster's Formula Electric Racing team in my first month of university. I spent a year on the manufacturing subteam before being promoted to Drivetrain Lead, where I took charge of developing our custom planetary gearboxes. I remain an active senior member on the Drivetrain Subteam.</p>
       </div>
     </div>
 
@@ -263,8 +263,8 @@ nav { background: var(--bg); backdrop-filter: none; }
     </div>
 
     <div class="detail">
-      <p>I've been on the team for five years. In that time I've helped build four carbon fiber monocoques and one chassis mold. Each monocoque takes weeks of mold prep, carbon layup, resin infusion, and post-processing. The mold itself meant machining foam positives and laying up carbon fiber mold halves around them.</p>
-      <p>As Drivetrain Lead I also ran the subteam. I interviewed and picked new members, assigned the work, and checked every calculation, CAD model, and drawing before it went out.</p>
+      <p>I've been on the team for four years. In that time, I've helped build four carbon fiber monocoques and one chassis mold. Each monocoque takes weeks of mold prep, carbon layup, resin infusion, and post-processing.</p>
+      <p>I was Drivetrain Lead for the 2023/2024 school year. My subteam was responsible for the car's gearboxes, as well as the front spindles. I interviewed and selected new members, assigned work, and checked every calculation, CAD model, and drawing before it went out. I was only a second-year student at the time, so I had to learn fast and research topics that would typically be taught in third- and fourth-year courses.</p>
     </div>
     <div class="timeline">
       <h3>The gearbox, year by year</h3>
@@ -284,8 +284,9 @@ nav { background: var(--bg); backdrop-filter: none; }
       <div class="tl-item">
         <div class="tl-year">2024<span>My first year as lead</span></div>
         <div class="tl-body">
-          <p>My priority was fixing those three problems on a very tight budget.</p>
+          <p>My priority was fixing those three problems on a tight budget.</p>
           <ul>
+            <li>The 2023 gearbox had leaking gaskets on both sides of the housing. We call these the inboard and outboard sides.</li>
             <li>On the inboard side, I replaced the gasket with an O-ring face seal. The O-ring sits in its own groove, so it's hard to seat wrong, and it's an off-the-shelf part rather than a gasket we had to make.</li>
             <li>On the outboard side, the 2023 gearbox always leaked midway between the bolts, which meant the cap was flexing and the gasket wasn't being squeezed evenly. I switched from a very stiff aramid fiber gasket to softer Buna-N, doubled the bolt count, and checked the cap's stiffness with FEA. Buna-N is also more forgiving of rough sealing surfaces, which helps when a student team has to rebuild a gearbox somewhere far from a clean shop.</li>
             <li>To cut length, we moved the brake caliper from in front of the gearbox to its side, so the brake rotor could sit right up against the gearbox face. That shortened the spindle, cutting the moment arm between the wheel and the bearings. It also let the gearbox sit much deeper in the wheel, which gave us more freedom when choosing a track width. Overall, the gearbox came out 29% shorter.</li>
@@ -299,21 +300,25 @@ nav { background: var(--bg); backdrop-filter: none; }
         <div class="tl-body">
           <p>I wasn't lead for the 2025 gearbox, but a few of its biggest changes came from me, based on what I'd learned the year before.</p>
           <ul>
-            <li>We switched the spindle from aluminum to steel. Aluminum has no true fatigue endurance limit, so an aluminum spindle has to be designed for a finite number of load cycles. That's fine for a car built for one season, but a steel spindle the same size has a much higher fatigue strength, so we get more margin for a bit more weight. Steel is also harder, so the rotary seal runs on a surface that doesn't scratch as easily. Scratches on the aluminum spindle were a leak risk.</li>
+            <li>We switched the rear spindle material from aluminum to steel. A big part of this was fatigue. Aluminum has no endurance limit, so our spindle had to be designed for a finite number of cycles. On a component spinning at up to 1500 rpm, those cycles go by fast. Switching to steel ensured that the spindle would last much longer. Steel is also much harder than aluminum, which provided a better sealing surface at the rotating interface. We had noticed that the aluminum spindle was prone to scratches, which were a leak risk.</li>
             <li>We added hardened washers under the thrust bearings. In 2024 the bearings ran directly on the aluminum spindle, which was my mistake. Rollers need a hard surface to run on, and aluminum wears under them.</li>
-            <li>I also designed further weight reduction for the housing.</li>
+            <li>I was also responsible for weight reduction on the gearbox housing, reducing its mass by about 20%.</li>
           </ul>
+          <div class="gallery" style="margin-top:16px;max-width:640px;grid-template-columns:1fr 1fr">
+            <figure class="shot" style="min-height:0;aspect-ratio:677/762"><img src="gb-housing-2024.jpg" alt="CAD render of the 2024 gearbox housing" loading="lazy"><figcaption>2024 gearbox housing</figcaption></figure>
+            <figure class="shot" style="min-height:0;aspect-ratio:677/762"><img src="gb-housing-2025.jpg" alt="CAD render of the lightened 2025 gearbox housing" loading="lazy"><figcaption>2025 gearbox housing</figcaption></figure>
+          </div>
         </div>
       </div>
 
       <div class="tl-item">
         <div class="tl-year">Next<span>What we'd still change</span></div>
         <div class="tl-body">
-          <p>This design isn't perfect. Some of its flaws are my own mistakes. I designed the 2024 gearbox at the start of second year, before I'd taken most of the core mechanical courses, so I taught myself a lot of it. Others come down to budget, where we know the better solution but can't afford it yet.</p>
+          <p>This design isn't perfect. Some of its flaws are my own mistakes. I designed the 2024 gearbox at the start of second year, before I'd taken most of the core mechanical courses, so I taught myself a lot of it. Others come down to budget, where we know the better solution but can't afford it yet. Below are some of our key priorities for the upcoming season.</p>
           <ul>
-            <li>Replace the X-ring between the spindle and the housing with a proper rotary seal. The X-ring works, but it's where most of our friction comes from. This is the biggest change planned for next year.</li>
+            <li>Replace the X-ring between the spindle and the housing with a proper rotary seal. The X-ring works, but it's where most of our friction comes from.</li>
             <li>Use O-ring face seals on both sides. It'll take some redesign, but with low internal pressure, a face seal is cleaner than a gasket and leaves less room for mistakes during assembly.</li>
-            <li>Make new gears. Electrical problems outside our subteam have limited how much the last three cars have run. Rather than pay for new custom gears, we've pulled, inspected, and reused the originals every year. Their ratio isn't ideal for our current wheel size, weight, and motors, so we'd like a new set once the budget allows. We recheck the gears every year in Excel and KISSsoft, so every drivetrain member learns gear design properly.</li>
+            <li>Make new gears. Electrical problems outside our subteam have limited how much the last three cars have run. Rather than pay for new custom gears, we've pulled, inspected, and reused the gears every year. Their ratio isn't ideal for our current wheel size, weight, and motors, so we'd like a new set once the budget allows. Despite reusing them, we recheck the gears every year in Excel and KISSsoft, so that every drivetrain member learns gear design properly.</li>
           </ul>
         </div>
       </div>
@@ -341,8 +346,8 @@ nav { background: var(--bg); backdrop-filter: none; }
       <figure class="shot g-third tall"><img src="en-tug.jpg" alt="Santiago lying under an airport tug, installing an EV conversion kit" loading="lazy"><figcaption>Installing an EV conversion kit on an airport tug</figcaption></figure>
     </div>
     <div class="detail">
-      <p>During my co-op, my main job was updating motor and inverter parts for Enedym's Actium product line as the company moved from early prototypes to mass production. I reworked the motor housings so they could be extruded instead of CNC machined, which cut both cost and wasted material. I then adapted the end caps to fit the new housings, rerouting the cooling channels and designing new seals.</p>
-      <p>Enedym kept me on part-time through third year, mostly working on a new generation of inverters. I designed their housings, busbars, and other mechanical parts. Across all 12 months, I also worked on three diesel-to-EV vehicle conversions, where I designed mounts and covers, installed Enedym's products, and did test drives and troubleshooting.</p>
+      <p>During my co-op, I focused on two main projects. The first was updating motor and inverter designs to transition from early prototypes into production models. I reworked the motor housings so they could be extruded instead of CNC machined, which cut both cost and wasted material. I then adapted the motor end caps to interface with these new housings, rerouted the cooling channels, and designed new seals. My second project was a series of demonstrator vehicles that were being converted from diesel to Enedym-powered electric vehicles. I worked on two airport tugs, designing custom parts, installing the new powertrains, and performing test drives.</p>
+      <p>Enedym chose to keep me employed part-time after my co-op, while I completed my third year of university. During this time, I mostly worked on a next-generation inverter product, where I had ownership over the housing design, busbars, and other mechanical decisions. I worked closely with electrical engineers to ensure compatibility with their PCB designs. I also continued to contribute to the electric vehicle projects and some motor products.</p>
     </div>
   </div>
 </section>
@@ -354,17 +359,17 @@ nav { background: var(--bg); backdrop-filter: none; }
         <h2>Mining</h2>
       </div>
       <div>
-        <p>I spent 16 months full-time in mining. The first 8 were on site at Teck's Highland Valley Copper mine, and the next 8 were in consulting at BBA.</p>
+        <p>I spent 16 months working full-time in the mining industry. The first 8 months were on site at Teck's Highland Valley Copper mine, while the remaining 8 months were with BBA, a mining-focused consulting firm.</p>
       </div>
     </div>
 
     <div class="gallery">
       <figure class="shot g-half mine"><img src="mn-tunnel.jpg" alt="Santiago in a respirator and hard hat beside a conveyor at Highland Valley Copper" loading="lazy"><figcaption>Conveyor gallery at Highland Valley Copper</figcaption></figure>
-      <figure class="shot g-half mine"><img src="mn-truck.jpg" alt="Santiago standing in front of a CAT 793D haul truck" loading="lazy"><figcaption>Myself in front of a CAT 793D haul truck (240-ton capacity)</figcaption></figure>
+      <figure class="shot g-half mine"><img src="mn-truck.jpg" alt="Santiago standing in front of a CAT 793D haul truck" loading="lazy"><figcaption>Myself in front of an autonomous CAT 793D haul truck</figcaption></figure>
     </div>
 
     <div class="detail">
-      <p>At Highland Valley Copper I was on the site services engineering team, designing chutes, liner packages, custom tooling, work platforms, and lifting devices. Mines move slowly, so none of my own designs made it all the way from concept to installation while I was there. Across different projects, though, I was involved at every stage, from design through fabrication to installation. Along the way, I worked directly with fabricators and maintenance crews to sort out problems.</p>
+      <p>At Highland Valley Copper I was part of the Site Services team, designing chutes, liner packages, custom tooling, work platforms, and lifting devices. I was involved in every stage of our projects, from design through fabrication and installation. I worked closely with a group of tradespeople, engineers, operators, and other talented personnel. Most importantly, I learned how to work safely on a large industrial site, around real hazards.</p>
       <p>At BBA I worked for mining clients on several continents, across different commodities and mining methods. I ran FEA in Ansys Mechanical and SolidWorks Simulation, went on site visits, and worked closely with electrical and mining engineers. Projects ranged from brand-new greenfield mines to existing sites going through major upgrades and retrofits.</p>
       <p>Most of my work in mining is covered by confidentiality agreements, so the two photos above are among the very few I'm allowed to share.</p>
     </div>
@@ -378,7 +383,7 @@ nav { background: var(--bg); backdrop-filter: none; }
         <h2>Robot design competition</h2>
       </div>
       <div>
-        <p>MECHENG 2C04 is McMaster's mandatory second-year mechanical design course. Teams of three each build a robot for a timed competition. Out of the whole class of 163 students, our team won. We scored 9 goals against a class average of 2.9, and tied for the most completed runs, with 10 in one minute against an average of 4.2.</p>
+        <p>MECHENG 2C04 is McMaster's mandatory second-year mechanical design course. Small teams each build a robot for a timed competition. Out of the whole class of 163 students, our team won. We scored 9 goals against a class average of 2.9, and tied for the most completed runs, with 10 in one minute against an average of 4.2.</p>
       </div>
     </div>
 
@@ -389,7 +394,7 @@ nav { background: var(--bg); backdrop-filter: none; }
     </div>
 
     <div class="detail">
-      <p>The robot had to drive between two lines and score a ping pong ball in a goal, completing as many cycles as possible in a fixed time. Teams could step in at the starting line between cycles to load a new ball or straighten the robot. Everyone had to use the same course-supplied servo motors, and extra points went to low weight, overall design, and using as few motors as possible. Powered wheels were banned, with a wheel defined as anything whose arc covers more than 90 degrees.</p>
+      <p>The robot had to travel back and forth between two lines and score a ping pong ball in a goal, completing as many cycles as possible within one minute. Every team had to use the same course-supplied servo motors and was explicitly banned from using powered wheels (defined as anything whose arc covers more than 90 degrees). Teams were also scored on weight, overall design, and using as few motors as possible.</p>
       <p>We used free-spinning wheels to keep the robot's momentum. Four anchor-shaped legs, designed to just barely touch the ground, pushed it forward and back. The launcher was a spring-loaded rack and pinion with half of the pinion's teeth removed. As the servo turns, the teeth pull the rack back against the spring, and then the toothless half lets it go. That way, one servo spinning in one direction fires the launcher over and over.</p>
     </div>
   </div>
@@ -402,7 +407,7 @@ nav { background: var(--bg); backdrop-filter: none; }
         <h2>Robotics</h2>
       </div>
       <div>
-        <p>In high school I captained our FIRST Robotics Competition team, Arctos 6135, managing 11 subteams through robot design, fabrication, and testing. I now teach robotics part-time at Columbia International College, a private high school.</p>
+        <p>In high school I captained our FIRST Robotics Competition team, Arctos 6135, managing 11 subteams through robot design, fabrication, and testing. During my year as captain, we attended the FIRST World Championship for the first time in team history. I now teach robotics part-time at Columbia International College, a private high school.</p>
       </div>
     </div>
 
@@ -410,8 +415,8 @@ nav { background: var(--bg); backdrop-filter: none; }
     <div class="gallery">
       <figure class="shot g-half"><img src="rb-hs-team.jpg" alt="Arctos team members with their robot at a competition" loading="lazy"><figcaption>Provincial Championships 2022</figcaption></figure>
       <figure class="shot g-half"><img src="rb-hs-internals.jpg" alt="Inside of the Arctos robot" loading="lazy"><figcaption>World Championships 2022</figcaption></figure>
-      <figure class="shot g-half"><img src="rb-hs-elevator.jpg" alt="Robot frame with an elevator under construction" loading="lazy"><figcaption>Building the drivetrain in my bedroom due to COVID restrictions</figcaption></figure>
-      <figure class="shot g-half"><img src="rb-hs-frame.jpg" alt="Robot frame with polycarbonate panels" loading="lazy"><figcaption>Test assembly of the robot shooter</figcaption></figure>
+      <figure class="shot g-half"><img src="rb-hs-elevator.jpg" alt="Robot frame with an elevator under construction" loading="lazy"><figcaption>Building the robot in my house due to COVID-19 restrictions</figcaption></figure>
+      <figure class="shot g-half"><img src="rb-hs-frame.jpg" alt="Robot frame with polycarbonate panels" loading="lazy"><figcaption>Partial robot assembly</figcaption></figure>
     </div>
 
     <h3 class="rowlabel">2022–present · Critical Circuits 9062</h3>
@@ -430,7 +435,7 @@ nav { background: var(--bg); backdrop-filter: none; }
         <h2>In the shop</h2>
       </div>
       <div>
-        <p>I love working hands-on, and I've been lucky enough to work with a wide range of industrial equipment. Below are photos of me at McMaster's Manufacturing Research Institute, along with some from the Formula Electric team shop.</p>
+        <p>I love working hands-on, and I've been lucky enough to work with a wide range of industrial equipment, including CNC mills, lathes, and a waterjet. Below are photos of me at McMaster's Manufacturing Research Institute, along with some from the Formula Electric team shop.</p>
       </div>
     </div>
 
