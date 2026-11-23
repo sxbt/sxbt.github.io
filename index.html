@@ -287,8 +287,9 @@ nav { background: var(--bg); backdrop-filter: none; }
           <p>My priority was fixing those three problems on a tight budget.</p>
           <ul>
             <li>The 2023 gearbox had leaking gaskets on both sides of the housing. We call these the inboard and outboard sides.</li>
-            <li>On the inboard side, I replaced the gasket with an O-ring face seal. The O-ring sits in its own groove, so it's hard to seat wrong, and it's an off-the-shelf part rather than a gasket we had to make.</li>
-            <li>On the outboard side, the 2023 gearbox always leaked midway between the bolts, which meant the cap was flexing and the gasket wasn't being squeezed evenly. I switched from a very stiff aramid fiber gasket to softer Buna-N, doubled the bolt count, and checked the cap's stiffness with FEA. Buna-N is also more forgiving of rough sealing surfaces, which helps when a student team has to rebuild a gearbox somewhere far from a clean shop.</li>
+            <li>On both sides, I switched from a very stiff aramid fiber gasket to a softer Buna-N one. Buna-N is more forgiving of rough sealing surfaces, which helps when a student team has to rebuild a gearbox somewhere far from a clean shop.</li>
+            <li>On the outboard side, the 2023 gearbox always leaked midway between the bolts, which meant the cap was flexing and the gasket wasn't being squeezed evenly. I doubled the bolt count and checked the cap's stiffness with FEA.</li>
+            <li>The outboard bolts thread into tapped holes in the housing, but the inboard side uses through holes. The inboard side gets taken apart much more often, so I didn't want to risk wearing out small threads in the aluminum housing.</li>
             <li>To cut length, we moved the brake caliper from in front of the gearbox to its side, so the brake rotor could sit right up against the gearbox face. That shortened the spindle, cutting the moment arm between the wheel and the bearings. It also let the gearbox sit much deeper in the wheel, which gave us more freedom when choosing a track width. Overall, the gearbox came out 29% shorter.</li>
             <li>For friction, the 2023 design had plain lubricated washers at each end of the planet gears, and they tended to bind. The planets spin on needle bearings and float on their shafts, so in a corner their own momentum pushes them sideways into those washers. The bolts running through the gearbox also lightly clamp the gear stack, so the washers needed either a bit of play or near-perfect tolerances. I swapped them for thrust bearings, which take that sideways load and still spin freely.</li>
           </ul>
@@ -302,6 +303,7 @@ nav { background: var(--bg); backdrop-filter: none; }
           <ul>
             <li>We switched the rear spindle material from aluminum to steel. A big part of this was fatigue. Aluminum has no endurance limit, so our spindle had to be designed for a finite number of cycles. On a component spinning at up to 1500 rpm, those cycles go by fast. Switching to steel ensured that the spindle would last much longer. Steel is also much harder than aluminum, which provided a better sealing surface at the rotating interface. We had noticed that the aluminum spindle was prone to scratches, which were a leak risk.</li>
             <li>We added hardened washers under the thrust bearings. In 2024 the bearings ran directly on the aluminum spindle, which was my mistake. Rollers need a hard surface to run on, and aluminum wears under them.</li>
+            <li>We replaced the inboard gasket with an O-ring face seal, a technique I learned at Enedym. The O-ring sits in its own groove, so it's hard to seat wrong, and it's an off-the-shelf part rather than a gasket we have to make.</li>
             <li>I was also responsible for weight reduction on the gearbox housing, reducing its mass by about 20%.</li>
           </ul>
           <div class="gallery" style="margin-top:16px;max-width:640px;grid-template-columns:1fr 1fr">
@@ -317,7 +319,7 @@ nav { background: var(--bg); backdrop-filter: none; }
           <p>This design isn't perfect. Some of its flaws are my own mistakes. I designed the 2024 gearbox at the start of second year, before I'd taken most of the core mechanical courses, so I taught myself a lot of it. Others come down to budget, where we know the better solution but can't afford it yet. Below are some of our key priorities for the upcoming season.</p>
           <ul>
             <li>Replace the X-ring between the spindle and the housing with a proper rotary seal. The X-ring works, but it's where most of our friction comes from.</li>
-            <li>Use O-ring face seals on both sides. It'll take some redesign, but with low internal pressure, a face seal is cleaner than a gasket and leaves less room for mistakes during assembly.</li>
+            <li>Switch the outboard side to an O-ring face seal as well. It'll take some redesign, but with low internal pressure, a face seal is cleaner than a gasket and leaves less room for mistakes during assembly.</li>
             <li>Make new gears. Electrical problems outside our subteam have limited how much the last three cars have run. Rather than pay for new custom gears, we've pulled, inspected, and reused the gears every year. Their ratio isn't ideal for our current wheel size, weight, and motors, so we'd like a new set once the budget allows. Despite reusing them, we recheck the gears every year in Excel and KISSsoft, so that every drivetrain member learns gear design properly.</li>
           </ul>
         </div>
